@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ cake.name }}</title>
+</head>
+<body>
+    <h1>{{ cake.name }}</h1>
+    <p>{{ cake.description }}</p>
+    <p>Price: ${{ cake.price }}</p>
+    <img src="{{ cake.image.url }}" alt="{{ cake.name }}">
+    <a href="{% url 'place_order' %}">Place an Order</a>
+</body>
+</html>

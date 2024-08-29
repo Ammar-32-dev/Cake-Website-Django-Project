@@ -1,0 +1,440 @@
+{% block start %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Cake</title>
+
+
+    <!-- linking CSS file -->
+    <link rel="stylesheet" type="text/css" href="{% static 'myapp/style.css' %}">
+
+    <!-- <link rel="stylesheet" type="text/css" href="{% static css_file %}"> -->
+
+    <link rel="stylesheet" href="{% static 'home/style.css' %}">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="stylesheet" href="{% static 'myapp/style.css' %}">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="logoContent">
+            <a href="#" class="logo"><img src="{% static 'myapp/logo.jpeg' %}" alt=""></a>
+            <h1 class="logoName"> Sweet Delight Cakery</h1>
+        </div>
+
+        <nav class="nav">
+            <a href="#home">Home</a>
+            <a href="#products">Products</a>
+            <a href="#blogs">Blogs</a>
+            <a href="#review">Review</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="icon">
+            <i class="fas fa-search" id="search"></i>
+            <i class="fas fa-bars" id="menu-bar"></i>
+        </div>
+
+        <div class="search">
+            <input type="search" placeholder="search....">
+        </div>
+    </header>
+
+    <section class="home" id="home">
+        <div class="homeContent">
+            <h2>Delicious Cake For Everyone</h2>
+            <p>At Sweet Delight Cakery, we believe that everyone deserves a delicious cake for every occasion. Our cakes
+                are custom made to order using the freshest and finest ingredients. We take pride in each cake,
+                selecting only top-quality ingredients for our recipes. Our classic cake flavors include White Almond,
+                Vanilla, Chocolate, Strawberry, Old Fashioned Butter (Classic Yellow), Lemon, Red Velvet, Pineapple
+                Supreme, and French Vanilla. We also offer signature cake flavors, such as White Chocolate Strawberry,
+                Cookies and Cream, and Orange Dreamsicle. Whether you're celebrating a birthday, wedding, anniversary,
+                or any other special occasion, our cakes are sure to impress.</p>
+            <div class="home-btn">
+                <a href="#"><button>See More...</button></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="products" id="products">
+        <div class="heading">
+            <h2>Our Exclusive Products</h2>
+        </div>
+        <div class="swiper product-row">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <div class="img">
+                        <img src="{% static 'myapp/cake1.png' %}" alt="">
+                    </div>
+                    <div class="product-content">
+                        <h3>Chocolate</h3>
+                        <p>"Indulge in the rich flavors of our decadent chocolate cake, made with the finest dark
+                            chocolate and topped with a velvety smooth chocolate ganache. Moist and fluffy, our
+                            chocolate cake is a chocolate lover's dream come true. Perfect for special occasions or just
+                            a sweet treat, our chocolate cake is sure to satisfy your cravings."</p>
+                        <div class="orderNow">
+                            <button>Order Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="img">
+                        <img src="{% static 'myapp/cake2.png' %}" alt="">
+                    </div>
+                    <div class="product-content">
+                        <h3>Chocolate Pastry</h3>
+                        <p>"Experience the ultimate delight for chocolate lovers with our decadent chocolate pastry.
+                            Made with rich, velvety chocolate and flaky, buttery pastry, our chocolate pastry is a treat
+                            for the senses."</p>
+                        <div class="orderNow">
+                            <button>Order Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="img">
+                        <img src="{% static 'myapp/cake3.png' %}" alt="">
+                    </div>
+                    <div class="product-content">
+                        <h3>Vanilla Brownie Cake</h3>
+                        <p>"Indulge in the ultimate comfort food with our moist and decadent vanilla brownie cake. This
+                            rich, fudgy delight combines the sweetness of vanilla with the depth of dark chocolate,
+                            creating a flavor experience that's both familiar and exciting."</p>
+                        <div class="orderNow">
+                            <button>Order Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="img">
+                        <img src="{% static 'myapp/blog-img3.png' %}" alt="">
+                    </div>
+                    <div class="product-content">
+                        <h3>Vanilla Cake</h3>
+                        <p>"Our moist and fluffy vanilla cake is a classic delight, perfect for any occasion. Made with
+                            the finest ingredients and a touch of love, this cake is sure to impress."</p>
+                        <div class="orderNow">
+                            <button>Order Now</button>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        </div>
+        <div class="swiper product-row">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <div class="img">
+                        <img src="{% static 'myapp/cake1.png' %}" alt="">
+                    </div>
+                    <div class="product-content">
+                        <h3>Chocolate</h3>
+                        <p>"Indulge in the rich flavors of our decadent chocolate cake, made with the finest dark
+                            chocolate and topped with a velvety smooth chocolate ganache. Moist and fluffy, our
+                            chocolate cake is a chocolate lover's dream come true. Perfect for special occasions or just
+                            a sweet treat, our chocolate cake is sure to satisfy your cravings."</p>
+                        <div class="orderNow">
+                            <button>Order Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="img">
+                        <img src="{% static 'myapp/cake2.png' %}" alt="">
+                    </div>
+                    <div class="product-content">
+                        <h3>Chocolate Pastry</h3>
+                        <p>"Experience the ultimate delight for chocolate lovers with our decadent chocolate pastry.
+                            Made with rich, velvety chocolate and flaky, buttery pastry, our chocolate pastry is a treat
+                            for the senses."</p>
+                        <div class="orderNow">
+                            <button>Order Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="img">
+                        <img src="{% static 'myapp/cake3.png' %}" alt="">
+                    </div>
+                    <div class="product-content">
+                        <h3>Vanilla Brownie Cake</h3>
+                        <p>"Indulge in the ultimate comfort food with our moist and decadent vanilla brownie cake. This
+                            rich, fudgy delight combines the sweetness of vanilla with the depth of dark chocolate,
+                            creating a flavor experience that's both familiar and exciting."</p>
+                        <div class="orderNow">
+                            <button>Order Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="img">
+                        <img src="{% static 'myapp/blog-img3.png' %}" alt="">
+                    </div>
+                    <div class="product-content">
+                        <h3>Vanilla Cake</h3>
+                        <p>"Our moist and fluffy vanilla cake is a classic delight, perfect for any occasion. Made with
+                            the finest ingredients and a touch of love, this cake is sure to impress."</p>
+                        <div class="orderNow">
+                            <button>Order Now</button>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <section class="blogs" id="blogs">
+
+        <div class=" swiper blogs-row">
+            <div class="swiper-wrapper">
+                <div class=" swiper-slide box">
+                    <div class="img">
+                        <img src="{% static 'myapp/blog-img1.png' %}" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Caramel Bourbon Vanilla Cupcakes </h3>
+                        <p>They're a unique dessert featuring a brown sugar bourbon cupcake topped with caramel vanilla
+                            frosting. The combination of flavors is undeniably tasty and full of flavor. The recipe
+                            typically includes ingredientslike unsalted butter, sugar, brown sugar, sour cream, vanilla
+                            extract, egg whites, all-purpose flour, baking powder, salt, cinnamon, milk, and bourbon
+                            whiskey. The frosting often incorporates caramel sauce and vanilla bean paste for added
+                            flavor and texture.</p>
+                        <p>"Indulge in the rich flavors of our Caramel Bourbon Vanilla Cupcakes, a decadent treat that
+                            will satisfy any sweet tooth. Moist brown sugar bourbon-infused cake is topped with a
+                            velvety caramel vanilla frosting, creating a delightful harmony of flavors. The subtle hint
+                            of bourbon adds a sophisticated twist to this classic dessert, while the caramel and vanilla
+                            notes provide a smooth and creamy finish. Perfect for special occasions or simply as a
+                            indulgent treat, these cupcakes are sure to impress. So go ahead, take a bite, and let the
+                            sweet indulgence begin!"</p>
+                        <a href="#blogs" class="btn">learn more</a>
+                    </div>
+                </div>
+                <div class=" swiper-slide box">
+                    <div class="img">
+                        <img src="{% static 'myapp/blog-img2.png' %}" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Exotic Fruit Cake</h3>
+                        <p>Exotic fruit cake is a sweet and flavorful dessert that combines a variety of fruits, nuts,
+                            and spices. The cake typically features a mixture of dried fruits, such as cranberries and
+                            raisins, along with nuts like walnuts and pecans. The result is a moist and aromatic cake
+                            that's perfect for special occasions.</p>
+                        <p>"Rich aromas and flavors abound in our Exotic Fruit Cake, a masterpiece of sweet indulgence.
+                            Totam ab ullam reiciendis sint eaque at the perfect blend of dried fruits, nuts, and spices,
+                            carefully crafted to create a truly unforgettable taste experience. Eaque at the sweetness
+                            of cranberries, raisins, and pineapple, balanced by the crunch of walnuts and pecans, all
+                            wrapped up in a moist and aromatic cake that's sure to delight."</p>
+                        <a href="#blogs" class="btn">learn more</a>
+                    </div>
+                </div>
+                <div class=" swiper-slide box">
+                    <div class="img">
+                        <img src="{% static 'myapp/blog-img3.png' %}" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Unique Birthday Cakes !</h3>
+                        <p>Unique birthday cakes are one-of-a-kind creations that make a statement on your special day.
+                            From 3D designs to edible art, these cakes are tailored to your personality and style. With
+                            flavors and designs that defy tradition, unique birthday cakes are the perfect way to
+                            celebrate another year of life.</p>
+                        <p>"Celebrate your special day with a masterpiece of sweetness, dolor sit amet consectetur
+                            adipisicing elit. Totam ab ullam reiciendis sint eaque at our unique birthday cakes, where
+                            creativity meets indulgence. Eaque at the perfect blend of flavors, designs, and
+                            presentation, our cakes are tailored to make your birthday unforgettable, sint eaque at a
+                            one-of-a-kind treat that's as unique as you are."</p>
+                        <a href="#blogs" class="btn">learn more</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+
+        </div>
+    </section>
+
+    <section class="newsletter">
+        <form action="">
+            <h3>subscribe for latest update</h3>
+            <input type="email" name="" placeholder="enter your email" id="" class="box">
+            <input type="button" value="subscribe" class="box2">
+        </form>
+    </section>
+
+    <section class="review" id="review">
+        <div class="heading">
+            <h2>client review</h2>
+        </div>
+
+
+        <div class=" swiper review-row">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <div class="client-review">
+                        <p>Hey there, fellow New Yorkers! It's your friendly neighborhood Spider-Man here, and I'm
+                            swinging by to give you the lowdown on the Sweet Delight Cake Shop. I've got to say, this
+                            place is a real treat!</p>
+                    </div>
+                    <div class="client-info">
+                        <div class="img">
+                            <img src="{% static 'myapp/images.jpeg' %}" alt="">
+                        </div>
+                        <div class="clientDetailed">
+                            <h3>Spider-Man (Tobey Maguire)</h3>
+                            <p>Rescue Other People</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="client-review">
+                        <p>I tried their famous vanilla cake, and oh man, it was love at first bite! The cake was so
+                            moist and flavorful, with just the right amount of sweetness. I could've eaten the whole
+                            thing by myself, but I had to share it with my family (they're always on my case about
+                            eating too much sugar!).</p>
+                    </div>
+                    <div class="client-info">
+                        <div class="img">
+                            <img src="{% static 'myapp/client1.jpg' %}" alt="">
+                        </div>
+                        <div class="clientDetailed">
+                            <h3>Tom Holland</h3>
+                            <p>Hollywood Actor</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="client-review">
+                        <p>The staff at Sweet Delight Cake Shop are absolutely lovely! They're so friendly and
+                            welcoming, and they really know their stuff when it comes to cakes. They helped me choose
+                            the perfect cake for my gathering, and even offered to customize it with a special message.
+                        </p>
+                    </div>
+                    <div class="client-info">
+                        <div class="img">
+                            <img src="{% static 'myapp/OIP.jpeg' %}" alt="">
+                        </div>
+                        <div class="clientDetailed">
+                            <h3>Andrew Garfield</h3>
+                            <p>Holland Actor</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="client-review">
+                        <p>Overall, I'm giving Sweet Delight Cake Shop a solid 5 out of 5 stars! It's a must-visit for
+                            any cake lover, and a great spot to satisfy your sweet tooth. Trust me, you won't be
+                            disappointed!</p>
+                    </div>
+                    <div class="client-info">
+                        <div class="img">
+                            <img src="{% static 'myapp/client1.jpg' %}" alt="">
+                        </div>
+                        <div class="clientDetailed">
+                            <h3>Hardy Devid</h3>
+                            <p>UI / UX designer</p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+
+    <footer class="footer" id="contact">
+        <div class="box-container">
+            <div class="mainBox">
+                <div class="content">
+                    <a href="#"><img src="{% static 'myapp/images/logo.png' %}" alt=""></a>
+                    <h1 class="logoName"> Sweet Delight Cake </h1>
+                </div>
+
+                <p>Sweet Delight Cakery
+
+                    Indulge in the sweet life at Sweet Delight Cakery, where every bite is a masterpiece of flavor and
+                    artistry. Our boutique bakery is dedicated to crafting exquisite cakes, pastries, and desserts that
+                    delight the senses and leave a lasting impression.
+
+                    Our Story
+
+                    Sweet Delight Cakery was born out of a passion for baking and a desire to share the joy of sweet
+                    treats with our community. Our talented team of pastry chefs and decorators are dedicated to
+                    creating one-of-a-kind masterpieces that exceed your expectations. From classic flavors to
+                    innovative creations, every item on our menu is carefully crafted to provide an unforgettable
+                    experience</p>
+
+            </div>
+            <div class="box">
+                <h3>Quick link</h3>
+                <a href="#"> <i class="fas fa-arrow-right"></i>Home</a>
+                <a href="#"> <i class="fas fa-arrow-right"></i>product</a>
+                <a href="#"> <i class="fas fa-arrow-right"></i>blogs</a>
+                <a href="#"> <i class="fas fa-arrow-right"></i>review</a>
+                <a href="#"> <i class="fas fa-arrow-right"></i>contact</a>
+
+            </div>
+            <div class="box">
+                <h3>Extra link</h3>
+                <a href="#"> <i class="fas fa-arrow-right"></i>Account info</a>
+                <a href="#"> <i class="fas fa-arrow-right"></i>order item</a>
+                <a href="#"> <i class="fas fa-arrow-right"></i>privacy policy</a>
+                <a href="#"> <i class="fas fa-arrow-right"></i>payment method</a>
+                <a href="#"> <i class="fas fa-arrow-right"></i>our services</a>
+            </div>
+            <div class="box">
+                <h3>Contact Info</h3>
+                <a href="#"> <i class="fas fa-phone"></i>+91 12222 34444</a>
+                <a href="#"> <i class="fas fa-envelope"></i>munawwar@gmail.com</a>
+
+            </div>
+
+        </div>
+        <div class="share">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-linkedin"></a>
+            <a href="#" class="fab fa-pinterest"></a>
+        </div>
+        <div class="credit">
+            created by <span>Mr. Shaikh Munawwar </span> | all rights reserved ! |
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="index.js"></script>
+
+
+    <!-- linking JS file -->
+    <script src="{% static 'myapp/index.js' %}"></script>
+
+    <!-- <script src="{% static js_file %}"></script> -->
+
+
+
+</body>
+
+</html>
+
+
+
+{% endblock %}

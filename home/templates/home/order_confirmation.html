@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Order Confirmation</title>
+</head>
+<body>
+    <h1>Order Confirmation</h1>
+    <p>Thank you for your order, {{ order.customer.user.username }}!</p>
+    <p>Your order number is: {{ order.id }}</p>
+    <p>Order details:</p>
+    <ul>
+        {% for cake in order.cakes.all %}
+            <li>{{ cake.name }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
